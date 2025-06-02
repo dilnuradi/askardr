@@ -1,26 +1,37 @@
-<!doctype html>
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Andetemin</title> 
-  <link rel="stylesheet" href="style.css"> 
-</head> 
-<body> 
-  
-  <div class="lyrics">
-    <span style="opacity: 0.6;">Cold in my kingdom size</span>
-    <span><strong>Fell for these ocean eyes</strong></span>
-    <span style="opacity: 0.6;">You should see me in a crown</span>
-  </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Поздравление</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="overlay">
+      <h1 class="title">ANDETEMIN</h1>
+      <p class="subtitle">ДОРОГОМУ АСКАРУ ИБРАГИМОВИЧУ<br>К 55-ЛЕТНЕМУ ЮБИЛЕЮ!</p>
+      
+      <img src="photo.jpg" alt="monkey" class="center-image">
 
-  <div class="player">
-    <audio controls>
-      <source src="Аскар-6.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+      <p class="song-title">В ЭТОТ ОСОБЫЙ ДЕНЬ</p>
+
+      <div class="controls">
+        <div class="icons">
+          <button title="Shuffle">🔀</button>
+          <button title="Prev">⏮️</button>
+          
+          <button class="play-pause" id="playPauseBtn">▶️</button>
+          
+          <button title="Next">⏭️</button>
+          <button title="Repeat">🔁</button>
+        </div>
+        <input type="range" id="progress" value="0" max="100">
+      </div>
+
+      <audio id="audio" src="Аскар-6.mp3"></audio>
+    </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
-

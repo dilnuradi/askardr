@@ -1,37 +1,97 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    height: 100vh;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+  }
+  
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .title {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .center-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .song-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .controls {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: url('photo.jpg') no-repeat center center/cover;
+    gap: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icons button {
+    background: none;
+    border: none;
+    font-size: 24px;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    cursor: pointer;
   }
-
-  .lyrics {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: auto;
-    margin-top: auto;
+  
+  .play-pause {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
   }
-
-  .lyrics span {
-    display: block;
-    margin: 10px 0;
+  
+  #progress {
+    width: 100%;
+    appearance: none;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    outline: none;
   }
-
-  .player {
-    position: absolute;
-    bottom: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-
-  audio {
-    width: 300px;
+  
+  #progress::-webkit-slider-thumb {
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
   }
