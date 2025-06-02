@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('photo1.jpg') no-repeat center center/cover;
+    background: url('photo.jpg') no-repeat center center/cover;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
