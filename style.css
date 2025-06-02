@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('photo1.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+
+  .lyrics {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  .lyrics span {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .player {
+    position: absolute;
+    bottom: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  audio {
+    width: 300px;
+  }
