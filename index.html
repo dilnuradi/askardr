@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Поздравление</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -12,25 +12,26 @@
     <div class="overlay">
       <h1 class="title">ANDETEMIN</h1>
       <p class="subtitle">ДОРОГОМУ АСКАРУ ИБРАГИМОВИЧУ<br>К 55-ЛЕТНЕМУ ЮБИЛЕЮ!</p>
-      
-      <img src="photo.jpg" alt="monkey" class="center-image">
+
+      <img src="monkeys.jpg" alt="monkey family" class="center-image" />
 
       <p class="song-title">В ЭТОТ ОСОБЫЙ ДЕНЬ</p>
 
-      <div class="controls">
-        <div class="icons">
-          <button title="Shuffle">🔀</button>
-          <button title="Prev">⏮️</button>
-          
-          <button class="play-pause" id="playPauseBtn">▶️</button>
-          
-          <button title="Next">⏭️</button>
-          <button title="Repeat">🔁</button>
-        </div>
-        <input type="range" id="progress" value="0" max="100">
+      <input type="range" id="progress" value="0" max="100" />
+
+      <div class="icons">
+        <button title="Shuffle"><img src="icons/shuffle.png" alt="shuffle" /></button>
+        <button title="Previous"><img src="icons/prev.png" alt="prev" /></button>
+
+        <button id="playPauseBtn" class="play-pause">
+          <img src="icons/play.png" alt="play" id="playIcon" />
+        </button>
+
+        <button title="Next"><img src="icons/next.png" alt="next" /></button>
+        <button title="Repeat"><img src="icons/repeat.png" alt="repeat" /></button>
       </div>
 
-      <audio id="audio" src="Аскар-6.mp3"></audio>
+      <audio id="audio" src="song.mp3"></audio>
     </div>
   </div>
 </body>
